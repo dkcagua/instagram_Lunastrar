@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0 ">
+</head>
+<body>
+
+    <div class="container">
+        <div class="insta" data-aos="zoom-in-down" data-aos-duration="3000">
+            <img src="img/logo.png" alt="instagram"> 
+        </div>
+        <div class="form-box" data-aos="zoom-out-right" data-aos-duration="3000">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar sesión</button>
+                <button type="button" class="toggle-btn" onclick="Registrar()">Registrar</button>
+            </div>
+            <div class="redes-sociales">
+                <a href="../index.html"><img src="img/face.png" alt="icono_facebook"></a>
+                 <a href="https://mail.google.com/mail/u/0/#inbox"><img src="img/gmail.png" alt="icono_gmail"></a>
+                 <a href="https://twitter.com/?lang=es"><img src="img/twitt.png" alt="icono_twitter"></a>
+             </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Acepto los <a href="https://help.instagram.com/581066165581870">términos y condiciones</a>.</span>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+            <form id="registrar" class="input-group">
+                   <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+            
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "120px";
+        }
+
+        function login(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "0px";
+        }
+        function Registrar(){
+            
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "120px";
+        }
+
+        function registrar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "0px";
+        }
+    </script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
